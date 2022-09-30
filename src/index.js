@@ -56,19 +56,19 @@ export const createItems = async () => {
   const client = initConnection();
   client.connect();
 
-  await client.query(`INSERT INTO users(name) VALUES(\'Sofia'\);`);
-  await client.query(`INSERT INTO users(name) VALUES(\'Michael'\);`);
-  await client.query(`INSERT INTO users(name) VALUES(\'Julia'\);`);
+  await client.query(`INSERT INTO users (name) VALUES(\'Sofia'\);`);
+  await client.query(`INSERT INTO users (name) VALUES(\'Michael'\);`);
+  await client.query(`INSERT INTO users (name) VALUES(\'Julia'\);`);
 
-  await client.query(`INSERT INTO categories(name) VALUES(\'Fantasy'\);`);
-  await client.query(`INSERT INTO categories(name) VALUES(\'History'\);`);
-  await client.query(`INSERT INTO categories(name) VALUES(\'Detective'\);`);
-  await client.query(`INSERT INTO categories(name) VALUES(\'Horror'\);`);
+  await client.query(`INSERT INTO categories (name) VALUES(\'Fantasy'\);`);
+  await client.query(`INSERT INTO categories (name) VALUES(\'History'\);`);
+  await client.query(`INSERT INTO categories (name) VALUES(\'Detective'\);`);
+  await client.query(`INSERT INTO categories (name) VALUES(\'Horror'\);`);
 
-  await client.query(`INSERT INTO authors(name) VALUES(\'J. K. Rowling'\);`);
-  await client.query(`INSERT INTO authors(name) VALUES(\'S. King'\);`);
+  await client.query(`INSERT INTO authors (name) VALUES(\'J. K. Rowling'\);`);
+  await client.query(`INSERT INTO authors (name) VALUES(\'S. King'\);`);
   await client.query(
-    `INSERT INTO authors(name) VALUES(\'Sir A. Conan Doyle'\);`
+    `INSERT INTO authors (name) VALUES(\'Sir A. Conan Doyle'\);`
   );
 
   await client.query(
